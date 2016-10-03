@@ -13,6 +13,8 @@ RUN echo "deb http://ftp.tw.debian.org/debian/ stable main non-free contrib" > /
 # update package list and install package
 RUN apt-get update -y ; apt-get install -y net-tools supervisor
 
-COPY supervisord.conf /etc/supervisor/supervisord.conf
+#COPY supervisord.conf /etc/supervisor/supervisord.conf
+
+#CMD supervisord -c /etc/supervisor/supervisord.conf
 
     
